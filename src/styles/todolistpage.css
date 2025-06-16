@@ -1,0 +1,135 @@
+/* ========== Block: task-app ========== */
+.task-app {
+    background: #f5e6c8;
+    font-family: sans-serif;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* === Header === */
+  .task-app__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .task-app__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .task-app__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  /* === Search section === */
+  .task-app__search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .task-app__input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    min-width: 150px;
+  }
+  
+  .task-app__button {
+    background-color: #f4a300;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-app__button:hover {
+    background-color: #d38f00;
+  }
+  
+  /* === Task list === */
+  .task-app__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* ========== Block: task-item ========== */
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid transparent;
+    background-color: #fff7ec;
+    transition: all 0.3s ease;
+  }
+  
+  /* Modifiers */
+  .task-item--completed {
+    background-color: #e4f4e8;
+    border-color: #35626a;
+  }
+  
+  .task-item--incomplete {
+    background-color: #fbeae9;
+    border-color: #a73535;
+  }
+  
+  /* Task content */
+  .task-item__content {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+    overflow-wrap: anywhere;
+  }
+  
+  .task-item__icon {
+    font-size: 1.2rem;
+  }
+  
+  /* Action buttons */
+  .task-item__actions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .task-item__edit {
+    background-color: #c2d6c4;
+    padding: 0.4rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item__edit:hover {
+    background-color: #a9c3ac;
+  }
+  
+  /* Danger (delete) override */
+  .task-item__edit--delete {
+    background-color: #f4a3a3;
+  }
+  
+  .task-item__edit--delete:hover {
+    background-color: #e28080;
+  }
+  
